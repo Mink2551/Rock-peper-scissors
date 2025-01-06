@@ -1,0 +1,164 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right , rgb(255, 169, 169) ,rgb(187, 240, 255));
+}
+
+.game 
+{
+    background: linear-gradient(to bottom left, white, wheat);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    width: 90vw;
+    height: 90vh;
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.displaybox
+{
+    flex: 6;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+#display
+{
+    width: 90%;
+    border: none;
+    height: 90%;
+    border-radius: 25px;
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.keys
+{
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+}
+
+.btn
+{
+    border: none;
+    width: 30%;
+    height: 50%;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color:  rgba(255, 255, 255);
+    cursor: pointer;
+}
+
+#rock 
+{
+    box-shadow: 10px 5px 15px rgb(255, 101, 101);
+    background-color: rgb(255, 101, 101);
+    transition: 0.1s;
+}
+
+#paper 
+{
+    box-shadow: 10px 5px 15px rgb(72, 246, 89);
+    background-color: rgb(72, 246, 89);
+    transition: 0.1s;
+}
+
+#scissor 
+{
+    box-shadow: 10px 5px 15px rgb(106, 101, 255);
+    background-color: rgb(106, 101, 255);
+    transition: 0.1s;
+}
+
+#rock:hover 
+{
+    box-shadow: 10px 5px 15px rgb(255, 101, 101);
+    background-color: rgb(198, 57, 57);
+}
+
+#paper:hover 
+{
+    box-shadow: 10px 5px 15px rgb(72, 246, 89);
+    background-color: rgb(43, 170, 56);
+}
+
+#scissor:hover
+{
+    box-shadow: 10px 5px 15px rgb(106, 101, 255);
+    background-color: rgb(53, 49, 180);
+}
+
+#rock:active 
+{
+    box-shadow: 10px 5px 15px rgb(255, 101, 101);
+    background-color: rgb(136, 27, 27);
+}
+
+#paper:active 
+{
+    box-shadow: 10px 5px 15px rgb(72, 246, 89);
+    background-color: rgb(21, 118, 31);
+}
+
+#scissor:active
+{
+    box-shadow: 10px 5px 15px rgb(106, 101, 255);
+    background-color: rgb(28, 24, 120);
+}
+
+#start {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 173, 73);
+    box-shadow: 10px 5px 15px rgb(0, 0, 0,0.3);
+    transition: 0.1s;
+}
+
+#start:hover {
+    background-color: rgb(182, 115, 33);
+}
+
+#start:active {
+    background-color: rgb(112, 71, 22);
+}
+
+.command
+{
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.btn:disabled
+{
+    opacity: 30%;
+}

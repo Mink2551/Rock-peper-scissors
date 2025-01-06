@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game">
+        <dis class="displaybox">
+            <input type="text" id="display" readonly>
+        </dis>
+        <div class="keys">
+            <button id="rock" onclick="checkcall(1)" class="btn">Rock</button>
+            <button id="paper" onclick="checkcall(2)" class="btn">Paper</button>
+            <button id="scissor" onclick="checkcall(3)" class="btn">Scissor</button>
+        </div>
+        <div class="command">
+            <button id="start" onclick="game_1()" class="btn">Start</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
