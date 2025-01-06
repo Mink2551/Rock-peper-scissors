@@ -124,6 +124,6 @@ const game_2 = (e) => {
         display.value = win
     }, 5000);
     setTimeout(() => {
-        location.reload
+        location.reload()
     }, 6000);
 }
